@@ -18,13 +18,9 @@ public class dr_GameData : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 
-		// ------------------------ MR ------------------------
-		//
 		// Forces a different code path in the BinaryFormatter that doesn't rely on run-time code generation (which would break on iOS).
 		// http://answers.unity3d.com/questions/30930/why-did-my-binaryserialzer-stop-working.html
 		Environment.SetEnvironmentVariable("MONO_REFLECTION_SERIALIZER","yes");
-		//
-		// ----------------------------------------------------
 
 		if (gameData == null) {
 			DontDestroyOnLoad(gameObject);
@@ -35,9 +31,6 @@ public class dr_GameData : MonoBehaviour {
 		}
 	}
 
-	// ------------------------ MR ------------------------
-	// uncommented these 
-	//
 	//When Object is created
 	void OnEnable(){
 		Load ();
@@ -47,8 +40,6 @@ public class dr_GameData : MonoBehaviour {
 	void OnDisable(){
 		Save ();
 	}
-	//
-	// ----------------------------------------------------
 
 	public void Save(){
 

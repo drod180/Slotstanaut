@@ -35,10 +35,7 @@ public class dr_PlayerControl : MonoBehaviour {
 		//Constant Timer
 		time += Time.deltaTime;
 
-		// ------------------------ MR ------------------------
-		//
 		//Set button press time
-		// if (Input.GetKeyDown (KeyCode.Space)) {
 		if (Input.GetKeyDown (KeyCode.Space) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)) {
 			shipAnimator.SetTrigger("NoFlame");
 			Debug.Log("BUTTON PRESSED");
@@ -51,8 +48,6 @@ public class dr_PlayerControl : MonoBehaviour {
 			shipAnimator.SetTrigger("Launched");
 		}
 		launch ();
-		//
-		// ----------------------------------------------------
 	}
 
 	void launch(){

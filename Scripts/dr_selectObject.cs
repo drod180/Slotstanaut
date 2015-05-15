@@ -61,8 +61,6 @@ public class dr_selectObject : MonoBehaviour {
 					return true;
 			}
 
-		// ------------------------ MR ------------------------
-		//
 		// Touch detection
 		} else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
 			if( (Input.GetTouch(0).position.x  < (posX + sizeX/2)) //Less than X bound
@@ -74,8 +72,6 @@ public class dr_selectObject : MonoBehaviour {
 				return true;
 			}
 		}
-		//
-		// ----------------------------------------------------
 		
 		//Didn't click in area
 		return false;
