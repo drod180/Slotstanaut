@@ -54,12 +54,12 @@ public class dr_GameData : MonoBehaviour {
 		//Save and close
 		bf.Serialize (file, data);
 		file.Close();
-
+		/*
 		Debug.Log("Data Saved~~~~~~~~~~~~~~~~~");
 		Debug.Log("Total Games Played: " + data.gamesPlayed);
 		Debug.Log("High Score: " + data.highScore);
 		Debug.Log("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-
+		*/
 	}
 
 	public void Load(){
@@ -77,10 +77,12 @@ public class dr_GameData : MonoBehaviour {
 
 			highScore = data.highScore;
 			gamesPlayed = data.gamesPlayed;
+			/*
 			Debug.Log("Data Loaded###################");
 			Debug.Log("Total Games Played: " + data.gamesPlayed);
 			Debug.Log("High Score: " + data.highScore);
 			Debug.Log("##############################");
+			*/
 		}
 	}
 
