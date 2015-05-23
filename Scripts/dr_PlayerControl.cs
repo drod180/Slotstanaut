@@ -38,7 +38,7 @@ public class dr_PlayerControl : MonoBehaviour {
 		//Set button press time
 		if (Input.GetKeyDown (KeyCode.Space) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)) {
 			shipAnimator.SetTrigger("NoFlame");
-			Debug.Log("BUTTON PRESSED");
+			//Debug.Log("BUTTON PRESSED");
 			inputTime = time;
 			//Starts game from pause
 			if(Time.timeScale == 0){
