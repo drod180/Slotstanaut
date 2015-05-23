@@ -33,7 +33,7 @@ public class dr_scoreController : MonoBehaviour {
 		else if(textName == "High Score Text"){
 
 			scoreText.text = "" + highScore;
-			Debug.Log("High Score: " + highScore);
+			//Debug.Log("High Score: " + highScore);
 		}
 
 	}

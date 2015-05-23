@@ -12,7 +12,6 @@ public class dr_GameStart : MonoBehaviour {
 	public float startTime;
 	public dr_characterCollision character;
 	public GameObject gameScore;
-	public GameObject gameOverScore;
 	public GameObject highScoreText;
 	public GameObject gameOverImage;
 	// Use this for initialization
@@ -31,8 +30,7 @@ public class dr_GameStart : MonoBehaviour {
 
 		//Initialize some game objects to either display or not
 		gameOverImage.SetActive (false);
-		gameOverScore.SetActive (false);
-		highScoreText.SetActive (false);
+		highScoreText.SetActive (true);
 		gameScore.SetActive (true);
 
 		Time.timeScale = 0;

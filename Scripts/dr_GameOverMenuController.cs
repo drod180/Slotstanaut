@@ -21,7 +21,7 @@ public class dr_GameOverMenuController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(deadStatus.deadStatus = true){
+		if(deadStatus.deadStatus == true){
 			string selectedButton = determineObject ();
 			switch (selectedButton) {
 			case "startButton":
