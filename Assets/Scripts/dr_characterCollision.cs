@@ -71,8 +71,8 @@ public class dr_characterCollision : MonoBehaviour {
 
 			Debug.Log ("New High Score : " + meteorScore.meteorsCrashed);
 			gameData.highScore = meteorScore.meteorsCrashed;
+			Debug.Log ("High Score Data is  : "+ gameData.highScore);
 			gameData.Save ();
-
 			//Set the proper death screen views active
 			gameOverImage.GetComponent<SpriteRenderer>().sprite = gameOverImageHigh.GetComponent<SpriteRenderer>().sprite;
 		}
@@ -80,6 +80,7 @@ public class dr_characterCollision : MonoBehaviour {
 			//Set the proper death screen views active
 			gameOverImage.GetComponent<SpriteRenderer>().sprite = gameOverImageStandard.GetComponent<SpriteRenderer>().sprite;
 		}
+
 		gameOverImage.SetActive (true);
 		playButton.SetActive (true);
 		menuButton.SetActive (true);

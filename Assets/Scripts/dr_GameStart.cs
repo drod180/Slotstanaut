@@ -20,13 +20,13 @@ public class dr_GameStart : MonoBehaviour {
 	public float startTime;
 	// Use this for initialization
 	void Start () {
-		gameData.Load ();
-
+		//Set Start of game time
 		startTime = Time.time;
 
+		//Load games played data and increment by 1
+		gameData.Load ();
 		gameData.gamesPlayed += 1;
 		Debug.Log("Total games played : " + gameData.gamesPlayed);
-
 		Debug.Log ("High Score?:" + gameData.highScore);
 		gameData.Save ();
 

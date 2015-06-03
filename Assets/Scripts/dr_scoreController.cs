@@ -17,6 +17,7 @@ public class dr_scoreController : MonoBehaviour {
 		gameData.Load ();
 		highScore = gameData.highScore; 
 		Debug.Log ("High Score is:" + highScore);
+		gameData.Save ();
 	}
 	
 	// Update is called once per frame
