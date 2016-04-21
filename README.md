@@ -36,5 +36,5 @@ void launch(){
 }
 ```
 
-[instructions]: ./img/home-page.png
-[gameplay]: ./img/game-play.png
+[instructions]: ./img/home-page.jpg
+[gameplay]: ./img/game-play.jpg
