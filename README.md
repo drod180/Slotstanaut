@@ -14,12 +14,12 @@ Slotstanaut is an avoider style mobile game developed in [Unity](https://unity3d
 ###Technical Details:
 * Slotstanaut relies heavily on Unity's [scripting API](http://docs.unity3d.com/ScriptReference/) for most of the game logic. One of the most crucial aspects of the game is a fluid and predictable ship movement. To achieve this the orbit is handled through some simple trig:
 
-```
+```C#
 	float xPos = Mathf.Sin (timeValue * circleSpeed) * circleSize;
 	float yPos = Mathf.Cos (timeValue * circleSpeed) * circleSize;
 ```
 With the player having control over changing the distance from the planet:
-```
+```C#
 void launch(){
 	inputTimeDif = time - inputTime;
 
